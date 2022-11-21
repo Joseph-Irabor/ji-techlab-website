@@ -1,0 +1,166 @@
+@import url('costom-properties.css');
+
+/* NAVIGATION BAR */
+
+.active{
+    font-weight: 500 !important ;
+}
+
+
+.navbar{
+    position: sticky; top: 0px;
+    z-index: 52;
+  
+}
+
+/* ================ */
+/* BANNER SECTION */
+
+
+.banner-container, .portfolio{
+    /* border: solid red; */
+    background-image: url('../media/images/banner.jpg');
+    height: 800px;
+    z-index: -1;
+}
+
+
+
+.cta-container{
+    margin: 20px;
+    position: absolute; top: 200px; 
+    padding: 5px;
+    color: rgb(242, 242, 242);
+    width: 90%;
+    
+}
+.cta-container h1{
+    line-height: 60px;
+    font-size: 40px;
+    width:70% ;
+}
+.cta-container p{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+
+
+/* FOOTER SECTION */
+.footer-head{
+    font-size: 7vw;
+}
+.top, .bottom{
+   
+    text-align: center;
+    color: white;
+}
+.top{
+    padding: 50px;
+    background-color: var(--color-primary);
+}
+.bottom{
+    padding: var(--space-x);
+    background-color: var(--color-tertiary);
+    font-size: 10px;
+    color: rgb(119, 115, 115);
+    
+}
+.footer-icons{
+    border-width: 10px;
+    border-bottom: 4px solid rgb(189, 189, 189);
+    font-size: 30px;
+    padding-bottom: var(--space-x);
+}
+.footer-icons a{
+    margin-left: var(--space-x);
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ========================================== */
+
+
+/*************** TABLET VIEW*************** */
+@media only screen and (min-width:768px){
+    /* BANNER SECTION */
+
+.cta-container{
+    margin: 20px;
+    width: 550px;
+    left:150px;
+}
+.cta-container h1{
+    line-height: 60px;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 50px;
+    width:70% ;
+    /* color: red; */
+}
+.cta-container p{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 20px;
+}
+
+/* FOOTER SECTION */
+.footer-head{
+    font-size: 5vw;
+}
+.footer-icons a{
+    margin-left: var(--space-xxx);
+}
+.bottom{
+    font-size: 10px;
+    color: rgb(119, 115, 115);
+    font-size: 14px;
+}
+}
+
+/* ========================================== */
+
+/*************** DESKTOP VIEW*************** */
+@media only screen and (min-width:1100px){
+    
+/* BANNER SECTION */
+.banner-container{
+    height: 800px;
+    }
+.cta-container{
+    margin: 20px;
+    width: 550px;
+    left: 300px;
+}
+.cta-container h1{
+    line-height: 60px;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 50px;
+    width:70% ;
+    /* color: blue; */
+}
+.cta-container p{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 20px;
+}
+
+/* NAVIGATION BAR */
+
+/* ======================================== */
+
+
+/* FOOTER SECTION */
+.footer-head{
+    font-size: 4vw;
+}
+
+.footer-icons a{
+    margin-left: var(--space-xxx);
+}
+.footer-icons a:hover{
+    color: var(--color-btn);
+}
+
+
+
+}

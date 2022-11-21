@@ -1,0 +1,63 @@
+@import url('costom-properties.css');
+/* text-color-seperation-style */
+.text-color-separation{
+    /* color:#654aff; */
+}
+/* ============================ */
+
+.services-container{
+    background-image:url('../media/images/services.jpg') !important;
+    background-size: contain;
+    
+}
+.bg-layout{
+    
+    text-align: center;
+    height: inherit;
+    
+   
+}
+.bg-layout .service-boxes{
+    margin-bottom: 40px;
+    display: inline-flex;
+    box-shadow: 0px 0px 10px gray;
+    padding: 20px;
+    width: 300px;
+    height:300px;
+    transition: ease 0.3s;
+    transform: rotate(1deg);
+    border-radius: 5px;
+    /* overflow: scroll; */
+    
+}
+.service-boxes:hover{
+    transform: rotate(0deg);
+    transition: ease 0.3s;
+}
+/* SERVICES CONTENT */
+.h-icon .icon{
+    color: #654aff;
+    font-size:60px ;
+    margin-bottom: 20px;
+}
+
+.h-icon h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* TABLET VIEW */
+@media (min-width:768px){
+
+    .bg-layout .service-boxes{
+        margin: 20px;
+    }
+
+}
+
+/* DESKTOP VIEW */
+@media  (min-width:1100px){
+
+
+}

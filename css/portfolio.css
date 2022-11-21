@@ -1,0 +1,159 @@
+@import url('costom-properties.css');
+/* text-color-seperation-style */
+
+/* ============================ */
+
+/* MOBILE VIEW */
+
+.portfolio-container{
+    background-image: url('../media/images/portfolio-bg.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;  
+    height: 100vh;
+    
+  
+}
+.bg-layout{
+    background-color: var(--color-secondary);
+    padding: 40px;
+    width: 95%;
+    height: 90vh;
+    overflow: auto;
+    
+}
+.bg-layout, .profile{
+    border-radius: 5px;
+   
+}
+
+.left{
+    
+    /* position: relative; top: -60px; */
+    background-color: var(--color-secondary);
+    /* width: 350px; */
+    height: 550px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.255);
+    margin: auto;
+}
+
+.right{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.203);
+    background-color: var(--color-secondary);
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+    height: 510px;
+    position: relative; top: 40px;
+    height: fit-content;
+      
+}
+.right section{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.203);
+    margin: 10px;
+    padding: 10px;
+}
+.left-inner-section{
+    height: 50%;
+    text-align: center;
+}
+.up{
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background-image: url('../media/images/profile-bg.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 50% 100%, 50% 100%, 0 86%);
+    /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+    
+    
+}
+.up img{
+    width: 350px;
+}
+.down{
+    position: relative;
+}
+.profile-bottom{
+    position: absolute; bottom: 0px;
+    width: 100%;
+    border-top: 1px solid rgba(154, 154, 154, 0.444);
+    padding: 20px;
+}
+.profile-bottom a{
+    /* border: solid red; */
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0px;
+}
+.profile-bottom-v-divide{
+    background-color: black;
+    height: 40px;
+    width: 10px;
+   
+}
+.profile a{
+    text-decoration: none;
+    color: inherit;
+}
+.profile a:hover{
+    color: #654aff;
+}
+
+.social-media-links a{
+   margin-right: 10px;
+   font-size: 15px;
+}
+.driving-force{
+    padding: 10px;
+  
+}
+.fav-sayings{
+    font-size: var(--space-xxx);
+    text-align: center;
+}
+
+
+
+/* TABLET VIEW */
+@media (min-width:768px){
+
+.left{
+    width: 350px;
+}
+}
+
+
+
+
+/* DESKTOP VIEW */
+
+@media  (min-width:1100px){
+
+
+.bg-layout{
+    position: relative;
+    padding: 40px;
+    width: 85%;
+    height: 75vh;
+    overflow:visible;
+    
+}
+.left{
+    position: relative; top: -60px;
+    width: 400px;
+    height: 550px;
+    float: left;
+}
+
+.right{
+    padding: 30px;
+    width: 55%;
+    height: 510px;
+    position: relative; top: -30px;
+    float: right;
+    overflow:auto;
+      
+}
+} 

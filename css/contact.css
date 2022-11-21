@@ -1,0 +1,59 @@
+@import url('costom-properties.css');
+/* text-color-seperation-style */
+.text-color-separation{
+    color:#654aff;
+}
+body{
+    background-color: black;
+    padding-bottom: 40px;
+}
+.contact-img{
+    text-align: center;
+}
+.contact-img img{
+    width: 200px;
+}
+.contact-container{
+    padding: 20px;
+    background-color: white;
+    /* height: 70vh; */
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: var(--space-x-s);
+}
+
+.btn-generic-2{
+    width: 100%;
+}
+.contact-bottom{
+    margin: 20px;
+    display: grid;
+    place-items: center;
+}
+.contact-bottom .inner{
+    padding: 10px;
+}
+/* ============================ */
+
+
+
+/* ======================== TABLET VIEW===================== */
+
+@media (min-width:768px){
+    .contact-container .form-control-2{
+        height: 30px;
+    }
+}
+
+/* ======================== DESKTOP VIEW===================== */
+
+@media(min-width:1100px){
+    .contact-img img{
+        width: 300px;
+    }
+    .contact-container{
+        width:30%;
+    }   
+
+}
